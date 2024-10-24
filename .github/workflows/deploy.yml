@@ -31,3 +31,4 @@ jobs:
             git clone https://github.com/SebasSosa10/sosa-abarka.git /home/ubuntu/sosa-abarka;
           fi
           '
+          echo "$HOST_NAME" > private_key.pem && chmod 400 private_key.pem

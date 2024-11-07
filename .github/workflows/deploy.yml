@@ -29,6 +29,9 @@ jobs:
           # Verificamos si el directorio es un repositorio Git
           if [ ! -d "/home/ubuntu/sosa-abarka/.git" ]; then
             # Si no es un repositorio Git, clonamos el repositorio
-            git clone https://github.com/SebasSosa10/sosa-abarka.git /home/ubuntu/sosa-abarka;
+            git clone https://github.com/SebasSosa10/Monolithic-User-Product.git /home/ubuntu/sosa-abarka;
           fi
+          
+          #docker compose build
+          #docker compose up -d
           '

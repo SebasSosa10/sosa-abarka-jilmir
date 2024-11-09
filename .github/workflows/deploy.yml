@@ -32,7 +32,7 @@ jobs:
             git clone https://github.com/SebasSosa10/Monolithic-User-Product.git /home/ubuntu/sosa-abarka;
           fi
           
-          cd /home/joan-sebastian-sosa-bedoya/Documentos/sosa-abarka &&
+          cd /home/ubuntu/sosa-abarka &&
           
           git checkout main &&
           git fetch --all &&

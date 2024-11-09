@@ -34,6 +34,13 @@ jobs:
           
           cd /home/joan-sebastian-sosa-bedoya/Documentos/sosa-abarka &&
           
-          docker compose build
+          git checkout main &&
+          git fetch --all &&
+          git reset --hard origin/main &&
+          git pull origin main &&
+          
+          docker compose down &&
+          docker compose build &&
+          docker compose up -d
           docker compose up -d
           '

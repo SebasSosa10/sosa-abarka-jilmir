@@ -1,5 +1,3 @@
-### Project Description for GitHub
-
 # **Sosa-Abarka-Jilmir**
 
 This project is a blogging platform designed to be scalable, efficient, and user-friendly. It leverages modern technologies to ensure a seamless experience for both developers and end-users. The architecture is optimized for automated deployments in Docker and AWS-based environments.

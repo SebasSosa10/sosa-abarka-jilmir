@@ -33,7 +33,3 @@ This project includes a workflow file (`deploy.yml`) that manages automatic depl
 1. **Repository Check:** Ensures the server already contains the Git repository.
 2. **Cloning and Updating:** If the repository is missing, it clones it. If present, it fetches and pulls the latest changes.
 3. **Service Restart:** Stops the current services, rebuilds containers, and restarts the entire environment using Docker Compose.
-
----
-
-Would you like to modify or enhance any section before uploading it to GitHub?

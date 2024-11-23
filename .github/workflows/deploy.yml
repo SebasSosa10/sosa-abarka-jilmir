@@ -27,12 +27,12 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${USER_NAME}@${HOST_NAME} '
 
           # Verificamos si el directorio es un repositorio Git
-          if [ ! -d "/home/ubuntu/sosa-abarka/.git" ]; then
+          if [ ! -d "/home/ubuntu/sosa-abarka-jilmir/.git" ]; then
             # Si no es un repositorio Git, clonamos el repositorio
-            git clone https://github.com/SebasSosa10/Monolithic-User-Product.git /home/ubuntu/sosa-abarka;
+            git clone https://github.com/SebasSosa10/sosa-abarka-jilmir.git /home/ubuntu/sosa-abarka-jilmir;
           fi
           
-          cd /home/ubuntu/sosa-abarka &&
+          cd /home/ubuntu/sosa-abarka-jilmir &&
           
           git checkout main &&
           git fetch --all &&

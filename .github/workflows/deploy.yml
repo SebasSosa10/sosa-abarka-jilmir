@@ -29,7 +29,7 @@ jobs:
           # Verificamos si el directorio es un repositorio Git
           if [ ! -d "/home/ubuntu/sosa-abarka-jilmir/.git" ]; then
             # Si no es un repositorio Git, clonamos el repositorio
-            git clone https://github.com/SebasSosa10/sosa-abarka-jilmir.git /home/ubuntu/sosa-abarka-jilmir;
+            git clone https://github.com/SebasSosa10/Blogging-Platform.git /home/ubuntu/sosa-abarka-jilmir;
           fi
           
           cd /home/ubuntu/sosa-abarka-jilmir &&

@@ -1,35 +1,35 @@
-# **Sosa-Abarka-Jilmir**
+# **Plataforma de Blogs - Despliegue Automatizado**  
 
-This project is a blogging platform designed to be scalable, efficient, and user-friendly. It leverages modern technologies to ensure a seamless experience for both developers and end-users. The architecture is optimized for automated deployments in Docker and AWS-based environments.
+Este proyecto es una plataforma de blogs diseñada para ser escalable, eficiente y fácil de usar. Utiliza tecnologías modernas para garantizar una experiencia fluida tanto para desarrolladores como para usuarios finales. Su arquitectura está optimizada para despliegues automatizados en entornos basados en Docker y AWS.  
 
-## **Key Features**
+## **Características Clave**  
 
-### Blogging Platform:
-- Management of posts and comments.
-- Support for categories and tags.
-- Modular design for easy extension and customization.
+### Plataforma de Blogs:  
+- Gestión de publicaciones y comentarios.  
+- Soporte para categorías y etiquetas.  
+- Diseño modular para facilitar la extensión y personalización.  
 
-### Deployment Automation:
-- CI/CD setup with GitHub Actions.
-- Automated deployment to AWS EC2 instances.
-- Docker Compose for container orchestration.
+### Automatización del Despliegue:  
+- Configuración de CI/CD con GitHub Actions.  
+- Despliegue automatizado en instancias AWS EC2.  
+- Docker Compose para orquestación de contenedores.  
 
-### Containerization:
-- Dockerized configuration to ensure portability.
-- Scripts for building, deploying, and restarting services.
+### Contenerización:  
+- Configuración Dockerizada para garantizar portabilidad.  
+- Scripts para construir, desplegar y reiniciar servicios.  
 
-## **Technologies Used**
+## **Tecnologías Utilizadas**  
 
 - **Backend:** Spring Boot (Java)  
-- **Containerization:** Docker and Docker Compose  
-- **Deployment:** AWS EC2 with GitHub Actions  
-- **Version Control:** Git  
-- **Automation:** YAML workflows for CI/CD  
+- **Contenerización:** Docker y Docker Compose  
+- **Despliegue:** AWS EC2 con GitHub Actions  
+- **Control de Versiones:** Git  
+- **Automatización:** Workflows YAML para CI/CD  
 
-## **How the Automated Deployment Works**
+## **Cómo Funciona el Despliegue Automatizado**  
 
-This project includes a workflow file (`deploy.yml`) that manages automatic deployment whenever changes are pushed to the `main` branch:
+Este proyecto incluye un archivo de workflow (`deploy.yml`) que gestiona el despliegue automático cada vez que se realizan cambios en la rama `main`:  
 
-1. **Repository Check:** Ensures the server already contains the Git repository.
-2. **Cloning and Updating:** If the repository is missing, it clones it. If present, it fetches and pulls the latest changes.
-3. **Service Restart:** Stops the current services, rebuilds containers, and restarts the entire environment using Docker Compose.
+1. **Verificación del Repositorio:** Se asegura de que el servidor ya contenga el repositorio Git.  
+2. **Clonación y Actualización:** Si falta el repositorio, lo clona; si existe, obtiene y aplica los últimos cambios.  
+3. **Reinicio de Servicios:** Detiene los servicios actuales, reconstruye los contenedores y reinicia todo el entorno con Docker Compose.
